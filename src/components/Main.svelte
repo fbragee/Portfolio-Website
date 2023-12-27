@@ -4,8 +4,27 @@
     let steps = [
         {name: 'Project 1', icon: 'fa-solid fa-cart-shopping'},
         {name: 'Project 2', icon: 'fa-solid fa-list-check'},
-        {name: 'Project 3', icon: 'fa-solid fa-diagram-project'},
-    ]
+        {name: 'Project 3', icon: 'fa-solid fa-diagram-project'}
+    ];
+
+    let benefits = [
+        {
+            metric: "10x",
+            name: "a self taught developer",
+            description:
+                "I taught myself to code using free online resources and absolutely fell in love with the creativity and problem solving that is involved in developing and engineering innovative new online experiences. Starting of with JavaScript, HTML & CSS and evolving my knowledge base to include JavaScript frameworks, backend programming, design, cloud services and much much more.",
+        },
+        {
+            name: "a product design & UX finatic",
+            description:
+                "Carefully crafting and designing amazing user experiences allows me to express and experiment with every morsel of creativity I have. I love the challenge of learning new design concepts and enabling users with amazing online experiences.",
+        },
+        {
+            name: "an excellent communicator",
+            description:
+                "Communication is key and it's a paramount value of mine. I believe in transparency and constructive communication above all else. This helps me develop deep relationships and ensures my effectiveness and productivity in any work space with any team.",
+        },
+    ];
 </script>
 
 <main class="flex flex-col flex-1 p-4">
@@ -61,7 +80,11 @@
             <h6 class="text-lg sm:text-xl md:text-2xl">Want to know more?</h6>
             <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">A bit <span class="poppins text-violet-400">about </span>me.</h3>
         </div>
-        
-
+        <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">I am . . .</p>
+        <div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
+            {#each benefits as benefit, index}
+            <div class="flex gap-6 sm:"></div>
+            {/each}
+        </div>
     </section>
 </main>
